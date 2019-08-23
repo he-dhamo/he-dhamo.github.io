@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Object-Driven Multi-Layer Scene Decomposition From a Single Image</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./w3.css">
+</head>
+
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s4">
+      <a href="#paper" class="w3-button w3-block w3-black">Paper</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="#download" class="w3-button w3-block w3-black">Datasets</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="#code" class="w3-button w3-block w3-black">Code</a>
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+
+<h3 align="center" id="title">Object-Driven Multi-Layer Scene Decomposition From a Single Image (ICCV 2019)</h3>
+  <p align="center" class="center_text" id="authors">
+    <a target="_blank" href="http://campar.in.tum.de/Main/HelisaDhamo">Helisa Dhamo</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a target="_blank" href="http://campar.in.tum.de/Main/NassirNavab">Nassir Navab</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a target="_blank" href="http://campar.in.tum.de/Main/FedericoTombari">Federico Tombari</a>&nbsp;&nbsp;&nbsp;&nbsp;
+  </ul>
+  </p>
+
+  <p class="center_text" align="center">
+    Technical Unviersity of Munich&nbsp;&nbsp;&nbsp;&nbsp;Google</br>
+  </p>
+<br>
+
+</span>
+
+
+<div class="w3-container" id="paper">
+  <div class="w3-content" style="max-width:850px">
+    <!--<h3><b>Abstract</b></h3>-->
+    <br><center><image src="teaser.png" style="max-width:100%" /></center><br>
+    <p style="text-align:justify">
+        We present a method that tackles the challenge of predicting color and depth behind the visible content of an image. Our approach aims at building up a Layered Depth Image (LDI) from a single RGB input, which is an efficient representation that arranges the scene in layers, including originally occluded regions. Unlike previous work, we enable an adaptive scheme for the number of layers and incorporate semantic encoding for better hallucination of partly occluded objects. Additionally, our approach is object-driven, which especially boosts the accuracy for the occluded intermediate objects.
+       The framework consists of two steps. First, we individually complete each object in terms of color and depth, while estimating the scene layout. Second, we rebuild the scene based on the regressed layers and enforce the recomposed image to resemble the structure of the original input. The learned representation enables various applications, such as 3D photography and diminished reality, all from a single RGB image.
+    </p>
+
+    <!-- <iframe width="100%" height="480px" src="https://www.youtube.com/embed/367CeZtrEYM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <h3 class="w3-left-align"><b>Paper</b></h3>
+    International Conference on Computer Vision (ICCV 2019)<br>
+    <!-- Paper | <a href="https://arxiv.org/pdf/1908.06109.pdf"> arXiv</a> | Supplemental Material -->
+    <pre class="w3-panel w3-leftbar w3-light-grey" style="white-space: pre-wrap; font-family: monospace; font-size: 14px">
+  @inproceedings{Dhamo2019iccv,
+    title={Object-Driven Multi-Layer Scene Decomposition From a Single Image},
+    author={Helisa Dhamo, Nassir Navab, Federico Tombari},
+    journal={Proceedings IEEE International Conference on Computer Vision (ICCV)},
+    year={2019}
+  }</pre>
+  </div>
+</div>
+
+<div class="w3-container" id="download">
+  <div class="w3-content" style="max-width:850px">
+    <h3 class="w3-left-align"><b>Dataset Download</b></h3>
+    <!-- <p>Download: If you would like to download the 3RScan data, please fill out this <a href="https://forms.gle/NvL5dvB4tSFrHfQH6">form 3RScan Terms of Use</a>. </p> -->
+    <p> For the purpose of this work we generated large-scale datasets that contain layered scene representations.</p>
+    <p><i> Coming soon </i></p>
+  </div>
+</div>
+
+<div class="w3-container" id="code">
+  <div class="w3-content" style="max-width:850px">
+    <h3 class="w3-left-align"><b>Code</b></h3>
+    <!-- <p>Download: If you would like to download the 3RScan data, please fill out this <a href="https://forms.gle/NvL5dvB4tSFrHfQH6">form 3RScan Terms of Use</a>. </p> -->
+    <p><i>Coming soon </i> </p>
+  </div>
+</div>
+<!--
+<div class="w3-container" id="contact">
+  <div class="w3-content" style="max-width:850px">
+    <h3 class="w3-left-align"><b>Contact</b></h3>
+    For questions please contact us via our group email the 3RScan group email <a href="mailto:3RScan@googlegroups.com">3RScan@googlegroups.com</a>. For more information regarding the 3RScan dataset, please see our git repo (coming soon).
+  </div>
+</div>
+-->
+<br><br><br>
+
+</body>
+</html>
