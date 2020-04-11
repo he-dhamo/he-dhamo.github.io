@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Semantic Image Manipulation Using Scene Graphs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./w3.css">
+</head>
+
+<body>
+
+  <!-- Links (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-row w3-padding w3-blue">
+      <div class="w3-col s4">
+        <a href="#paper" class="w3-button w3-block w3-blue"><b>Paper</b></a>
+      </div>
+      <div class="w3-col s4">
+        <a href="#download" class="w3-button w3-block w3-blue"><b>Downloads</b></a>
+      </div>
+      <div class="w3-col s4">
+        <a href="#contact" class="w3-button w3-block w3-blue"><b>Contact</b></a>
+      </div>
+    </div>
+  </div>
+
+<br><br><br>
+<h3 align="center" id="title">Semantic Image Manipulation Using Scene Graphs (CVPR 2020)</h3>
+  <p align="center" class="center_text" id="authors">
+    <a target="_blank" href="http://campar.in.tum.de/Main/HelisaDhamo">Helisa Dhamo</a> *&nbsp;&nbsp;&nbsp;&nbsp;
+    <a target="_blank" href="http://campar.in.tum.de/Main/AzadeFarshad">Azade Farshad</a> *&nbsp;&nbsp;&nbsp;&nbsp;
+    <a target="_blank" href="http://campar.in.tum.de/Main/IroLaina">Iro Laina</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a target="_blank" href="http://campar.in.tum.de/Main/NassirNavab">Nassir Navab</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a target="_blank" href="http://www.cs.jhu.edu/~hager/">Gregory D. Hager</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a target="_blank" href="http://campar.in.tum.de/Main/FedericoTombari">Federico Tombari</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a target="_blank" href="http://campar.in.tum.de/Main/ChristianRupprecht">Christian Rupprecht</a>&nbsp;&nbsp;&nbsp;&nbsp;
+  </ul>
+  </p>
+
+  <p class="center_text" align="center">
+    Technical University of Munich&nbsp;&nbsp;&nbsp;&nbsp;University of Oxford&nbsp;&nbsp;&nbsp;&nbsp;Johns Hopkins University&nbsp;&nbsp;&nbsp;&nbsp;Google</br>
+  </p>
+  <p class="center_text" align="center">
+  * The first two authors contributed equally.
+  </p>
+<br>
+
+</span>
+
+<div class="w3-container" id="paper">
+  <div class="w3-content" style="max-width:850px">
+    <!--<h3><b>Abstract</b></h3>-->
+    <br><center><image src="teaser_simsg.png" style="max-width:100%" /></center><br>
+    <p style="text-align:justify">
+        In our work, we address the novel problem of image manipulation from scene graphs, in which a user can edit images by merely applying changes in the nodes or edges of a semantic graph that is generated from the image. Our goal is to encode image information in a given constellation and from there on generate new constellations, such as replacing objects or even changing relationships between objects, while respecting the semantics and style from the original image. We introduce a spatio-semantic scene graph network that does not require direct supervision for constellation changes or image edits. This makes it possible to train the system from existing real-world datasets with no additional annotation effort.
+
+    </p>
+
+    <embed width="100%" height="480px" src="http://campar.in.tum.de/pub/dhamo2020cvpr_1/dhamo2020cvpr_1.video.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><embed>
+    <h3 class="w3-left-align"><b>Paper</b></h3>
+    Conference on Computer Vision and Pattern Recognition (CVPR) 2020<br>
+    Paper PDF | <a href="https://arxiv.org/pdf/2004.03677.pdf"> arXiv</a>
+    <pre class="w3-panel w3-leftbar w3-light-grey" style="white-space: pre-wrap; font-family: monospace; font-size: 14px">
+  @inproceedings{dhamo2020_SIMSG,
+    title={Semantic Image Manipulation Using Scene Graphs},
+    author={Dhamo, Helisa and Farshad, Azade, and Laina, Iro and Navab, Nassir and
+            Hager, Gregory D., and Tombari, Federico and Rupprecht, Christian},
+    booktitle={CVPR},
+    year={2020}
+  }</pre>
+  </div>
+</div>
+
+<div class="w3-container" id="download">
+  <div class="w3-content" style="max-width:850px">
+    <h3 class="w3-left-align"><b>Downloads</b></h3>
+    <!-- <p>Download: If you would like to download the 3RScan data, please fill out this <a href="https://forms.gle/NvL5dvB4tSFrHfQH6">form 3RScan Terms of Use</a>. </p> -->
+    <!--
+    <p>
+      You can download our automatically generated data, based on CLEVR
+      <a href="http://campar.in.tum.de/files/SIMSG/CLEVR_SIMSG.zip">
+        here</a>. The dataset contains source and target pairs of images and scene graphs. The pairs describe semantic changes, such as object replacement, removal, addition of novel objects and relationship changes.
+        The data is organized as follows: </br>
+        <div style="font-family: monospace;">
+        CLEVR_SIMSG.zip </br>
+        --- source/ </br>
+        --- target/ </br>
+        --- categoriesSplitClevr.txt </br>
+        </br>
+      </div>
+        The directories <font style="font-family: monospace;"> source/</font> and <font style="font-family: monospace;">target/</font> follow the same structure as the Visual Genome dataset, as used in <i>sg2im [Johnson CVPR 2018]</i>.
+    </p>
+  -->
+  <p>
+    The automatically generated dataset with editing pairs, based on CLEVR, with be available soon.
+  </p>
+  </div>
+</div>
+<!--
+<div class="w3-container" id="code">
+  <div class="w3-content" style="max-width:850px">
+    <h3 class="w3-left-align"><b>Code</b></h3>
+    <p>Code for this work can be found here.</p>
+  </div>
+</div>
+-->
+
+<div class="w3-container" id="contact">
+  <div class="w3-content" style="max-width:850px">
+    <h3 class="w3-left-align"><b>Contact</b></h3>
+    <p>
+      <i>For questions regarding the method or the CLEVR data, please
+
+              <a href="mailto:helisa.dhamo@tum.de;azade.farshad@tum.de"; class="w3-button w3-blue">contact us</a>.
+
+      </i>
+    </p>
+  </div>
+</div>
+
+<br><br><br>
+
+</body>
+
+</hhtml>
