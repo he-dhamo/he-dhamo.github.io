@@ -73,7 +73,17 @@
 <div class="w3-container" id="download">
   <div class="w3-content" style="max-width:850px">
     <h3 class="w3-left-align"><b>Downloads</b></h3>
-    <p> Coming soon </p>
+    <p> The <a href="https://drive.google.com/drive/folders/1purK2F0cFrEDwpPNYQVPHX_LJyL1reur" > json files </a> contain namely a dictionary of the scan ids of the scenes in the training set and validation set of 3RScan. Each scan contains a dictionary of object instances. 
+Every object node contains the fields ‘param7’, ‘8points’ and ‘direction’:
+-- param7:  Oriented 3D bounding box represented via 7 DoF parameters, namely length, width, height, 3D centroid, and an angle normalized from 0 to 90 degrees. 
+-- direction: specifies the facing direction of the object. It can take valid values of 1-4. Other values denote ambiguous cases. 
+-- 8points: Oriented 3D bounding box represented via its eight corners. Note that these points do not consider the facing direction of the object. 
+
+To obtain the final angle of an object, that considers the facing direction, you need to transform the last parameter (normalized angle) as follows:
+    <pre class="w3-panel w3-light-grey" style="white-space: pre-wrap; font-family: monospace; font-size: 14px">
+      param7[6] += (direction - 1) * np.deg2rad(90)
+    </pre>
+ </p>
   </div>
 </div>
 
