@@ -81,7 +81,7 @@ Every object node contains the fields ‘param7’, ‘8points’ and ‘directi
 <br>
 To obtain the final angle of an object, that considers the facing direction, you need to transform the last parameter (normalized angle) as follows:
     <pre class="w3-panel" style="white-space: pre-wrap; font-family: monospace; font-size: 14px">
-      param7[6] += (direction - 1) * np.deg2rad(90)
+      param7[6] += (direction - 1) * 90
     </pre>
  </p>
   </div>
